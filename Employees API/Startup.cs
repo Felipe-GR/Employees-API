@@ -19,6 +19,19 @@ namespace Employees_API
                 client.BaseAddress = new Uri("http://dummy.restapiexample.com/api/v1/");
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularOrigins",
+                    builder =>
+                    {
+                        builder.WithOrigins(
+                             "http://localhost:4200"
+                             )
+                             .AllowAnyHeader()
+                             .AllowAnyMethod();
+                    });
+            });
+
             services.AddScoped<EmployeeDataAccessLayer>();
             services.AddScoped<EmployeeBusinessLogicLayer>();
             services.AddControllers();
@@ -33,6 +46,7 @@ namespace Employees_API
                 app.UseSwagger();
                 app.UseSwaggerUI();
                 app.UseDeveloperExceptionPage();
+                app.UseCors("AllowAngularOrigins");
             }
 
             app.UseRouting();
@@ -41,6 +55,8 @@ namespace Employees_API
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors("AllowAngularOrigins");
         }
     }
 }

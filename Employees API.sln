@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees API", "Employees API\Employees API.csproj", "{DCA04FFE-436A-4E98-9D99-61A991829348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees API", "Employees API\Employees API.csproj", "{DCA04FFE-436A-4E98-9D99-61A991829348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees Test", "Employee Test\Employees Test.csproj", "{090C88A9-C276-4EC7-98AF-D298843F0EC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees Test", "Employee Test\Employees Test.csproj", "{090C88A9-C276-4EC7-98AF-D298843F0EC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
