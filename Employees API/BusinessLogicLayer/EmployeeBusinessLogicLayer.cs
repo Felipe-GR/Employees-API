@@ -7,6 +7,10 @@ namespace Employees_API.BusinessLogicLayer
     {
         private readonly EmployeeDataAccessLayer _dataAccessLayer;
 
+        public EmployeeBusinessLogicLayer()
+        {
+        }
+
         public EmployeeBusinessLogicLayer(EmployeeDataAccessLayer dataAccessLayer)
         {
             _dataAccessLayer = dataAccessLayer;
